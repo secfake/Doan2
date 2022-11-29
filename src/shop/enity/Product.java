@@ -13,7 +13,6 @@ public class Product {
         this.id = autoID++;
     }
 
-
     public String getName() {
         return name;
     }
