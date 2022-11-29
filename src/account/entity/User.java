@@ -4,6 +4,7 @@ public class User {
     protected static int autoID = 1;
     protected int id;
     protected String username;
+    protected String name;
     protected String email;
     protected String address;
     protected String phone;
@@ -14,8 +15,9 @@ public class User {
         this.id = autoID++;
     }
 
-    public User(String username, String email, String address, String phone, String password, String role) {
+    public User(String username, String name, String email, String address, String phone, String password, String role) {
         this.username = username;
+        this.name = name;
         this.email = email;
         this.address = address;
         this.phone = phone;
@@ -28,6 +30,7 @@ public class User {
         return "User{" +
                 "id=" + id +
                 ", username='" + username + '\'' +
+                ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 ", address='" + address + '\'' +
                 ", phone='" + phone + '\'' +
