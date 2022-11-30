@@ -17,10 +17,8 @@ public class HandleGeneral {
         }
     }
 
-    public void showCustomer(Customer customer) {
-
-    }
-
-    public void eidtCustomer() {
+    public void eidtCustomer(Customer customer) {
+        customer.showInfo();
+        System.out.println();
     }
 }

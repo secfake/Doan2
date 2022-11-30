@@ -47,4 +47,7 @@ public class Customer extends User {
     public void setOrders(List<Order> orders) {
         this.orders = orders;
     }
+
+    public void showInfo() {
+    }
 }
