@@ -8,6 +8,7 @@ public class Order {
     private Date orderTime;
     private String status;
     private double total;
+    private Customer customer;
 
     public Order() {
         this.id = autoID++;
@@ -38,6 +39,14 @@ public class Order {
 
     public void setTotal(double total) {
         this.total = total;
+    }
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
     }
 
     public void showInfo() {

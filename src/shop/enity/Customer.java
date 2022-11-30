@@ -4,6 +4,7 @@ import account.entity.User;
 
 
 import java.util.List;
+import java.util.Scanner;
 
 public class Customer extends User {
     private double balance;
@@ -26,10 +27,8 @@ public class Customer extends User {
     }
 
     @Override
-    public void inputInfo() {
-        super.inputInfo();
-
-
+    public void inputInfo(Scanner scanner) {
+        super.inputInfo(scanner);
     }
 
     public double getBalance() {
