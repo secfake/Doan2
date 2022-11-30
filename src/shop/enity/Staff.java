@@ -2,6 +2,8 @@ package shop.enity;
 
 import account.entity.User;
 
+import java.util.Scanner;
+
 public class Staff extends User {
 
     public Staff(String username, String name, String email, String address, String phone, String password, String role) {
@@ -9,10 +11,9 @@ public class Staff extends User {
     }
 
     @Override
-    public void inputInfo() {
-        super.inputInfo();
+    public void inputInfo(Scanner scanner) {
+        super.inputInfo(scanner);
     }
-
 
 
 }
