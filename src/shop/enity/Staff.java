@@ -4,8 +4,8 @@ import account.entity.User;
 
 public class Staff extends User {
 
-    public Staff() {
-        super();
+    public Staff(String username, String name, String email, String address, String phone, String password, String role) {
+        super(username, name, email, address, phone, password, role);
     }
 
     @Override

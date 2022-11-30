@@ -2,14 +2,27 @@ package shop.enity;
 
 import account.entity.User;
 
-import java.util.ArrayList;
+
+import java.util.List;
 
 public class Customer extends User {
     private double balance;
-    private ArrayList<Order> orders;
+    private List<Order> orders;
 
     public Customer() {
-        super();
+
+    }
+
+    public Customer(String username, String name, String email, String address, String phone, String password, String role, double balance) {
+        super(username, name, email, address, phone, password, role);
+        this.balance = balance;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "balance=" + balance +
+                '}';
     }
 
     @Override
@@ -27,11 +40,11 @@ public class Customer extends User {
         this.balance = balance;
     }
 
-    public ArrayList<Order> getOrders() {
+    public List<Order> getOrders() {
         return orders;
     }
 
-    public void setOrders(ArrayList<Order> orders) {
+    public void setOrders(List<Order> orders) {
         this.orders = orders;
     }
 }

@@ -1,11 +1,11 @@
 package shop.enity;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
 public class Order {
     private static int autoID = 1;
     private int id;
-    private LocalDateTime orderTime;
+    private Date orderTime;
     private String status;
     private double total;
 
@@ -13,11 +13,14 @@ public class Order {
         this.id = autoID++;
     }
 
-    public LocalDateTime getOrderTime() {
+    public int getId() {
+        return id;
+    }
+    public Date getOrderTime() {
         return orderTime;
     }
 
-    public void setOrderTime(LocalDateTime orderTime) {
+    public void setOrderTime(Date orderTime) {
         this.orderTime = orderTime;
     }
 
@@ -35,5 +38,8 @@ public class Order {
 
     public void setTotal(double total) {
         this.total = total;
+    }
+
+    public void showInfo() {
     }
 }
