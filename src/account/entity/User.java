@@ -1,5 +1,7 @@
 package account.entity;
 
+import java.util.Scanner;
+
 public class User {
     protected static int autoID = 1;
     protected int id;
@@ -40,8 +42,17 @@ public class User {
     }
 
     //Nhập thông tin user
-    public void inputInfo() {
-
+    public void inputInfo(Scanner scanner) {
+        System.out.print("Mời nhập username: ");
+        this.username = scanner.nextLine();
+        System.out.print("Mời nhập họ tên: ");
+        this.name = scanner.nextLine();
+        System.out.print("Mời nhập email: ");
+        this.email = scanner.nextLine();   ///Bổ sung regex
+        System.out.print("Mời nhập địa chỉ: ");
+        this.address = scanner.nextLine();
+        System.out.print("Mời nhập số điện thoại: ");
+        this.phone = scanner.nextLine();
     }
 
     public int getId() {
