@@ -1,7 +1,6 @@
 package shop.view;
 
 
-
 import shop.handle.HandleCustomer;
 
 import java.util.Scanner;
@@ -11,7 +10,7 @@ public class menuCustomer {
 
     /// hiện thị chức năng được chọn
     public void showMenu(Scanner scanner) {
-        while (true){
+        while (true) {
             System.out.println("Xin mời chọn chức năng ");
             System.out.println("1. Xem thông tin tất cả sản phẩm trong shop ");
             System.out.println("2. Tạo đơn đặt hàng mới ");

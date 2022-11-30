@@ -44,7 +44,7 @@ public class menuStaff {
 //                handleStaff.showOrder();
                 break;
             case 3:
-//                handleStaff.eidtOrder();
+//                handleStaff.editOrder();
                 break;
             case 4:
 //                handleStaff.eidtCustomer();
